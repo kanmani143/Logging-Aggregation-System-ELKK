@@ -1,0 +1,8 @@
+spring:
+  profiles:
+    active: "k8s"
+
+
+myapplication:
+  name: "loggingDemo"
+  author: "facundo-ramallo"

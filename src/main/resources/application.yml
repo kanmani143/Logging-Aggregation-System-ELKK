@@ -1,0 +1,23 @@
+spring:
+  profiles:
+    active: dev
+
+myapplication:
+  name: "loggingDemo"
+  author: "facundo-ramallo"
+
+logging:
+  pattern:
+    dateformat: yyyy-MM-dd HH:mm:ss.SSS,Europe/Madrid
+
+logback.access:
+    enabled: true
+    config: "classpath:logback-access-spring.xml"
+    local-port-strategy: local
+
+server:
+  tomcat:
+    accesslog:
+      enabled: true
+
+debug: false
